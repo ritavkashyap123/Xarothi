@@ -1,0 +1,45 @@
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.teamImgCont {
+    background-color: #F5F3FF;
+}
+
+.teamImg {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    max-width: 100%;
+    width: 180px;
+    height: 185px;
+}
+
+.teamImgCont{
+    border-radius: 10px 10px 0 0;
+    box-shadow: 10px 10px 10px 10px rgba(212, 200, 248, 0.38);
+}
+.teamCopy {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow:  10px 10px 10px rgba(212, 200, 248, 0.38);
+}
+
+.teamCopy p {
+    padding-top: .3rem;
+}
+
+.teamSocial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 0 0 10px 10px;
+    box-shadow:  10px 10px 10px rgba(212, 200, 248, 0.38);
+}

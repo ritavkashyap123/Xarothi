@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: "Margarine";
+}
+.aboutWrap {
+    background-color: rgba(191, 176, 233, .6);
+    padding-bottom: 4rem;
+    position: relative;
+}
+
+.aboutFormContainer {
+    background: #3730A3;
+    border-radius: 20px;
+    width: 65%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.aboutForm{
+    border-radius: 50px;
+    margin-top: 1rem;
+}
+
+.aboutFormInput{
+    background-color: #312E81;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.aboutFormButton{
+    background-color: #FC3746;
+    border: none;
+    padding: 0.5rem 1rem;
+    color:white;
+    border-radius: 50px;
+    font-family: "Marcus", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .heroCopyButton:active {
+    transform: translate(-3px, 3px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+.aboutLeaf{
+    position: absolute;
+    bottom:0;
+    width: 170px;
+}
+.aboutLeaff{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    width: 140px;
+}
+
+.aboutelipse{
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,92 @@
+.aboutElWrap{
+    width: 85%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.aboutElWrapOne{
+    display: flex;
+    justify-content: space-between;
+}
+.aboutElCopy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.imgAbout{
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+    width: 400px;
+    height: auto;
+}
+
+
+.imgAbouttwo{
+    width: 50%;
+    float:right;
+}
+
+
+.aboutElbutton{
+width:50%;
+margin-top: 1rem;
+background: rgba(251, 171, 72, 0.83);
+border-radius: 8px;
+border: none;
+color:white;
+width: 182px;
+height: 50px;
+cursor: pointer;
+transition: transform 0.2s ease-in-out;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.heroCopyButton:active {
+transform: translate(-3px, 3px);
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.aboutElh{
+    margin-bottom: 1rem;
+    font-family: "Margarine", sans-serif;
+}
+
+.aboutElp{
+    text-align: center;
+}
+
+.aboutelipse{
+    position: absolute;
+    height: 40%;
+}
+
+@media (max-width:750px) {
+    .imgAbout{
+        width: 300px;
+    }
+}
+@media (max-width:600px) {
+    .imgAbout{
+        width: 250px;
+        height: 40%;
+        margin-top: 5rem;
+    }
+}
+@media (max-width:500px) {
+    .aboutElCopy{
+        width: 100%;
+    }
+    .imgAbout{
+        display: none;
+    }
+    .imgAbouttwo{
+        width: 100%;
+        float:initial;
+    }
+    .aboutelipse{
+        display: none;
+    }
+}

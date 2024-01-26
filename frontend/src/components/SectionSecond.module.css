@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.sectionSecondWrapper {
+    padding-bottom: 5rem;
+    background-color: rgba(191, 176, 233, .1);
+    position: relative;
+}
+
+h2 {
+    color: #3F2F6B;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.sectionSecondp {
+    font-family: "Marcellus", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    max-width: 50%;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+}
+
+.offerSectionWrapper {
+    width: 85%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 30px;
+    position: relative;
+}
+
+.elipseOne {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+}
+
+.elipseTwo {
+    position: absolute;
+    z-index: -1;
+    top: .1rem;
+    right: 5rem;
+    max-width: 100%;
+}
+
+.elipseThree {
+    position: absolute;
+    z-index: -1;
+    top: .1rem;
+    left: 15rem;
+    max-width: 100%;
+}
+
+@media (max-width:450px){
+
+    
+    .elipseTwo {
+        position: absolute;
+        z-index: -1;
+        top: .1rem;
+        right: 5rem;
+        max-width: 80%;
+    }
+    
+    .elipseThree {
+        position: absolute;
+        z-index: -1;
+        top: .1rem;
+        left: 10rem;
+        width: 30%;
+    } 
+}

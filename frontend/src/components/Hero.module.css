@@ -1,0 +1,434 @@
+.heroMain {
+  background: linear-gradient(114.72deg, #4221AF 1.21%, rgba(73, 35, 200, 0.78) 50.21%, rgba(70, 20, 237, 0.53) 74.98%, rgba(56, 6, 218, 0.64) 92.38%, rgba(58, 44, 103, 0) 128.53%);
+  position: relative;
+  z-index: 5;
+}
+
+.hero {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  z-index: 10;
+}
+
+.header {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  width: 85%;
+  align-items: center;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 35%;
+  font-size: 1.3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, text-shadow 0.2s ease-in-out;
+}
+
+.link a:active {
+  transform: translate(-3px, 3px);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scrolled {
+  /* background: linear-gradient(114.72deg, #4221AF 1.21%, rgb(92, 57, 205) 50.21%, rgb(87, 48, 212) 74.98%, rgba(56, 6, 218, 1) 92.38%, rgba(58, 44, 103, 0) 128.53%); */
+  background-color: #4221AF88;
+}
+
+.heroCopy {
+  width: 85%;
+  min-width: 85%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  position: absolute;
+}
+
+.heroCopyh {
+  width: 55%;
+  font-size: 5rem;
+}
+
+.heroCopyp {
+  font-size: 1.5rem;
+  width: 45%;
+}
+
+.heroCopyButton {
+  margin: 2.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #FC3746;
+  color: white;
+  font-family: "Marcus";
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.heroCopyButton:active {
+  transform: translate(-3px, 3px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:1100px) {
+  .links {
+    width: 50%;
+
+  }
+  .heroImg {
+    right: 50px;
+  }
+
+  .heroImgImg {
+    width: 500px;
+  }
+}
+
+@media (max-width:700px) {
+
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 2rem;
+    height: 2.3rem;
+    position: relative;
+    z-index: 2000;
+  }
+
+  .line {
+    width: 100%;
+    height: 0.3rem;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+
+  .line:nth-child(1) {
+    transform: translateY(-185%) rotate(0);
+  }
+
+  .line:nth-child(2) {
+    opacity: 1;
+  }
+
+  .line:nth-child(3) {
+    transform: translateY(85%) rotate(0);
+  }
+
+  .open.line:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .open.line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open.line:nth-child(3) {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .open.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    margin-top: 0.5rem;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(114.72deg, #4221AF 1.21%, rgb(92, 57, 205) 50.21%, rgb(87, 48, 212) 74.98%, rgba(56, 6, 218, 1) 92.38%, rgba(58, 44, 103, 0) 128.53%);
+    box-shadow: 0 0.5rem 1;
+    border-radius: 10px;
+  }
+
+  .open.links li {
+    margin: 1rem 0;
+  }
+
+  .open.links li a {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .open.links {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .heroCopyh {
+    width: 100%;
+    font-size: 5rem;
+  }
+
+  .heroCopyp {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+}
+
+.heroElipse {
+  position: absolute;
+  height: 100%;
+  z-index: -2;
+}
+
+.heroImg {
+  position: absolute;
+  right: 0;
+  bottom: 5rem;
+  z-index: -1;
+
+}
+
+.heroImgImg {
+  width: 85%;
+}
+
+
+/*enrollement form*/
+
+.enrollmentForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: linear-gradient(114.72deg, #4221AF 1.21%, rgb(92, 57, 205) 50.21%, rgb(87, 48, 212) 74.98%, rgba(56, 6, 218, 1) 92.38%, rgba(58, 44, 103, 0) 128.53%);
+  border-radius: 5px;
+  padding: 20px;
+  /* max-width: 500px; */
+  margin: 0 auto;
+  z-index: 99999;
+}
+
+.threeForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.aboutFormInput {
+  background-color: #312E81;
+  border: none;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.aboutFormButton {
+  background-color: #FC3746;
+  border: none;
+  margin: 0 auto;
+  padding: 1.2rem 3rem;
+  color: white;
+  border-radius: 10px;
+  color: white;
+  font-family: "Marcus", sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.aboutFormButton:active {
+  transform: translate(-3px, 3px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.enrollmentFormh {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.closeButton:before,
+.closeButton:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: white;
+}
+
+.closeButton:before {
+  transform: rotate(45deg);
+}
+
+.closeButton:after {
+  transform: rotate(-45deg);
+}
+
+/*enrollement form*/
+
+@media (max-width:800px) {
+  
+}
+
+@media (max-width:600px) {
+  .enrollmentFormh {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .threeForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: 1rem;
+  }
+
+  .enrollmentForm {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 40%;
+    background: linear-gradient(114.72deg, #4221AF 1.21%, rgb(92, 57, 205) 50.21%, rgb(87, 48, 212) 74.98%, rgba(56, 6, 218, 1) 92.38%, rgba(58, 44, 103, 0) 128.53%);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 9999;
+  }
+
+  .aboutFormInput {
+    background-color: #312E81;
+    border: none;
+    margin-bottom: 1rem;
+    padding: .7rem;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+  .aboutFormButton {
+    background-color: #FC3746;
+    border: none;
+    margin: 0 auto;
+    padding: .7rem 3rem;
+    color: white;
+    border-radius: 10px;
+    color: white;
+    font-family: "Marcus", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+
+}
+
+@media (max-width:400px) {
+
+  .heroCopyh {
+    width: 80%;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+
+  .heroElipse {
+    position: absolute;
+    height: 100vh;
+    z-index: -2;
+    width: 50%;
+    max-width: 400px;
+  }
+
+  .enrollmentFormh {
+    font-size: 1rem;
+  }
+
+  .threeForm {
+    margin-top: .5rem;
+  }
+
+  .enrollmentForm {
+    width: 80%;
+    height: 30%;
+  }
+
+  .aboutFormInput {
+    background-color: #312E81;
+    border: none;
+    margin-bottom: 1rem;
+    padding: .4rem;
+    border-radius: 50px;
+    box-sizing: border-box;
+  }
+
+  .aboutFormButton {
+    background-color: #FC3746;
+    border: none;
+    margin: 0 auto;
+    padding: .7rem 3rem;
+    color: white;
+    border-radius: 10px;
+    color: white;
+    font-family: "Marcus", sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+  }
+}

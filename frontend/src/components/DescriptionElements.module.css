@@ -1,0 +1,94 @@
+.descElementOne {
+    width: 100%;
+    display: flex;
+    right: 0;
+    padding-top: 3rem;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descElementOne img {
+    width: 30%;
+    height: auto;
+    border-radius: 500px;
+
+}
+
+.descElementCopy {
+    width: 50%;
+}
+
+.descElementTwo {
+    display: flex;
+    right: 0;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descElementTwo img {
+    width: 30%;
+    height: auto;
+    border-radius: 500px;
+}
+
+h2 {
+    font-family: "Jost", sans-serif;
+
+}
+
+p {
+    font-family: "Marcellus", sans-serif;
+
+}
+
+.descButton {
+    border: none;
+    background-color: #FBAB48;
+    position: absolute;
+    width: 220px;
+    height: 50px;
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .descButton:active {
+    transform: translate(-3px, 3px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+@media (max-width:500px) {
+
+    .descElementCopy {
+        width: 100%;
+        z-index: 100;
+    }
+
+    .descElementOne img {
+       display: none;
+    
+    }
+    .descElementTwo img {
+        display: none;
+    }
+    .descButton {
+        width: 120px;
+        height: 50px;
+        margin-top: 1rem auto;
+        padding: .5rem;
+        border-radius: 8px;
+        color: white;
+        font-family: "Jost", sans-serif;
+        font-size: 1rem;
+    }
+    
+}

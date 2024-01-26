@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.teamMain{
+background-color: rgba(191, 176, 233,.5);
+padding-top:5rem;
+padding-bottom:5rem;
+position: relative;
+}
+.teamWrapper{
+    width:85%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap:2rem;
+    justify-content: center;
+}
+
+.teamMainCopy{
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.teamMainH{
+    font-family: "Margarine", sans-serif;
+}
+
+.teamElipseOneImg{
+    position:absolute;
+    top:13rem;
+    height: 150px;
+    
+}
+.teamElipseTwoImg{
+    position:absolute;
+    top:1rem;
+    height: 150px;
+    z-index: -1;
+}
+.teamElipseThreeImg{
+    position:absolute;
+    top:8rem;
+    right:55%;
+    height: 80px;
+    z-index: -1;
+}

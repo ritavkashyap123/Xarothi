@@ -1,0 +1,30 @@
+
+  .offerSection {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin:2rem auto;
+    border-radius: 101px;
+    max-width: 85%;
+    height: 450px;
+}
+.offerSection:nth-child(3) {
+  
+  padding-right: 20px;
+  
+}
+  
+
+  .offerSection p{
+    padding-top: 2rem;
+    font-family: "Marcellus", sans-serif;
+  }
+  .offerSection h3{
+    color:#3F2F6B;
+    padding-top: 2rem;
+  }
+
+  .offerSection .image {
+    height: 130px;
+    max-width: 45%;
+}

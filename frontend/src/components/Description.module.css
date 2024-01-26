@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.descriptionMain {
+    background-color: rgba(191, 176, 233, .26);
+    position: relative;
+}
+
+.descriptionWrapper {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leafOne {
+    position: absolute;
+    top:2rem;
+}
+
+.leafTwo {
+    position: absolute;
+    bottom:2rem;
+    z-index: -1;
+}
+
+.leafThree {
+    position: absolute;
+    right:0;
+    bottom:5rem;
+}
